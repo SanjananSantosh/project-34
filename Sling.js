@@ -1,4 +1,4 @@
-class sling {
+class Sling {
     constructor(bodyA, pointB) {
       var options = {
           bodyA:bodyA,
@@ -8,7 +8,7 @@ class sling {
       }
       this.pointB=pointB;
       this.rope = Constraint.create(options);
-      World.add(world, this.rope);
+      World.add(world, this.sling);
     }
     display(){
       var pointA=this.rope.bodyA.position;

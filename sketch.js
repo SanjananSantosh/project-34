@@ -16,16 +16,16 @@ function setup() {
 
   
 
-  ball1 = new Ball(200, 500, 80, 80);
-  ball2 = new Ball(250, 500, 80, 80);
-  ball3 = new Ball(300, 500, 80, 80);
-  ball4 = new Ball(350, 500, 80, 80);
-  ball5 = new Ball(400, 500, 80, 80);
-  rope1 = new Rope(ball.body, { x: 500, y: 150 });
-  rope2 = new Rope(ball.body, { x: 500, y: 150 });
-  rope3 = new Rope(ball.body, { x: 500, y: 150 });
-  rope4 = new Rope(ball.body, { x: 500, y: 150 });
-  rope5 = new Rope(ball.body, { x: 500, y: 150 });
+  bob1 = new Bob(200, 500, 80, 80);
+  bob2 = new Bob(250, 500, 80, 80);
+  bob3 = new Bob(300, 500, 80, 80);
+  bob4 = new Bob(350, 500, 80, 80);
+  bob5 = new Bob(400, 500, 80, 80);
+  sling1 = new Sling(bob.body, { x: 500, y: 150 });
+  sling2 = new Sling(bob.body, { x: 550, y: 150 });
+  sling3 = new Sling(bob.body, { x: 600, y: 150 });
+  sling4 = new Sling(bob.body, { x: 650, y: 150 });
+  sling5 = new Sling(bob.body, { x: 700, y: 150 });
 
 
 }
@@ -52,7 +52,7 @@ function draw() {
 
 
 function mouseDragged() {
-  Matter.Body.setPosition(ball.body, { x: mouseX, y: mouseY });
+  Matter.Body.setPosition(bob.body, { x: mouseX, y: mouseY });
 }
 
 
